@@ -62,4 +62,30 @@ private CashbackService service = new CashbackService();
         int actual = service.remain(-1);
         Assert.assertEquals(actual, expected);
     }
+
+    @Test
+    public void test8(){
+
+        int expected = 0;
+        int actual = service.remain(2000);
+        Assert.assertEquals(actual, expected);
+    }
+
+    @Test
+    public void test9(){
+
+        int expected = 700;
+        int actual = service.remain(300);
+        Assert.assertEquals(actual, expected);
+    }
+
+    @Test
+    public void test10(){
+
+        int expected = 300;
+        int actual = service.remain(1700);
+        Assert.assertEquals(actual, expected);
+    }
+
+
 }
