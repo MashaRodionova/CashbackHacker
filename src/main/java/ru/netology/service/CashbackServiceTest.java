@@ -87,5 +87,13 @@ public class CashbackServiceTest {
         Assert.assertEquals(expected, actual);
     }
 
+    @Test
+    public void test11(){
+
+        int expected = 0;
+        int actual = service.remain(-1000);
+        Assert.assertEquals(expected, actual);
+    }
+
 
 }
